@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Screenshot Multi-format",
-  "version": "1.4",
+  "name": "PK Screenshot Resizer",
+  "version": "2.3",
   "description": "Redimensionne la fenêtre et prend un screenshot dans différents formats",
   "permissions": [
     "tabs",
@@ -10,8 +10,20 @@
     "downloads"
   ],
   "action": {
+    "default_icon": {
+      "16": "icon-16.png",
+      "32": "icon-32.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    },
     "default_popup": "popup.html",
-    "default_title": "Take Screenshot Multi-format"
+    "default_title": "Take Screenshot"
+  },
+  "icons": {
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
   },
   "background": {
     "service_worker": "background.js"

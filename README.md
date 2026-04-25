@@ -48,6 +48,17 @@ Extension Chrome utilisant Manifest V3. Aucun build nécessaire - utilisez le do
 - 1.0.0 : Version initiale avec fonctionnalité de capture 1200x1200
 - 1.1.0 : Refactoring - organisation des fichiers dans dossier src/
 - 1.2.0 : Ajout de multiples formats pour différentes plateformes (Chrome, Android, iOS, macOS, WordPress, VSCode)
+- 1.3.0 : Correction de la capture screenshot avec meilleure qualité
+- 1.4.0 : Amélioration de l'interface utilisateur et ajout du background worker
+- 1.5.0 : Redesign complet de l'interface avec design Apple-like
+- 1.6.0 : Correction du nom de l'extension et ajout des icônes
+- 1.7.0 : Correction du chemin de l'icône dans le manifest.json
+- 1.8.0 : Suppression de l'icône du manifest.json pour éviter l'erreur de chargement
+- 1.9.0 : Ajout du chemin absolu de l'icône dans le manifest.json
+- 2.0.0 : Correction du chemin de l'icône pour pointer vers le fichier src/icon.png
+- 2.1.0 : Suppression temporaire de l'icône du manifest.json pour que l'extension se charge
+- 2.2.0 : Ajout de l'icône avec chemin relatif dans le manifest.json
+- 2.3.0 : Génération des tailles d'icônes standards (16, 32, 48, 128px) et icônes dans la page de gestion des extensions
 
 ## 🔗 Liens
 - EN README : [README_en.md](README_en.md)

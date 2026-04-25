@@ -3,54 +3,234 @@
 <head>
   <meta charset="utf-8">
   <style>
-    body {
-      width: 200px;
-      padding: 15px;
-      font-family: Arial, sans-serif;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    button {
+    
+    body {
+      width: 240px;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+      background: #ffffff;
+      padding: 0;
+      color: #1d1d1f;
+    }
+    
+    .header {
+      padding: 16px 20px 12px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .header h1 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+      color: #1d1d1f;
+    }
+    
+    .formats {
+      padding: 12px 20px;
+      max-height: 280px;
+      overflow-y: auto;
+    }
+    
+    .format-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 4px;
+    }
+    
+    .format-item:hover {
+      background: #f9f9f9;
+    }
+    
+    .format-item.active {
+      background: #007aff;
+      color: white;
+    }
+    
+    .format-info {
+      flex: 1;
+    }
+    
+    .format-name {
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+    
+    .format-size {
+      font-size: 11px;
+      opacity: 0.7;
+    }
+    
+    .format-item.active .format-size {
+      opacity: 0.9;
+    }
+    
+    .check-icon {
+      width: 18px;
+      height: 18px;
+      border: 2px solid #e5e5ea;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+    
+    .format-item.active .check-icon {
+      border-color: white;
+      background: white;
+    }
+    
+    .check-icon::after {
+      content: '✓';
+      color: #007aff;
+      font-size: 10px;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+    
+    .format-item.active .check-icon::after {
+      opacity: 1;
+      color: #007aff;
+    }
+    
+    .capture-section {
+      padding: 16px 20px;
+      border-top: 1px solid #f0f0f0;
+    }
+    
+    .capture-btn {
       width: 100%;
-      padding: 10px;
-      background-color: #4285f4;
+      height: 44px;
+      background: #007aff;
       color: white;
       border: none;
-      border-radius: 4px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
       cursor: pointer;
-      font-size: 14px;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
     }
-    button:hover {
-      background-color: #3367d6;
+    
+    .capture-btn:hover {
+      background: #0056b3;
     }
-    button:disabled {
-      background-color: #ccc;
-      cursor: notallowed;
+    
+    .capture-btn:active {
+      transform: scale(0.98);
     }
-    select {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 10px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      font-size: 12px;
+    
+    .capture-btn:disabled {
+      background: #d1d1d6;
+      cursor: not-allowed;
     }
+    
+    .capture-icon {
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .capture-icon::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #007aff;
+      border-radius: 1px;
+    }
+    
     #status {
-      margin-top: 10px;
-      font-size: 12px;
-      color: #666;
+      text-align: center;
+      font-size: 11px;
+      color: #86868b;
+      margin-top: 8px;
+      font-weight: 500;
     }
   </style>
 </head>
 <body>
-  <select id="formatSelect">
-    <option value="1200x1200">Chrome Store (1200x1200)</option>
-    <option value="1024x1024">Android Store (1024x1024)</option>
-    <option value="1024x768">iOS App (1024x768)</option>
-    <option value="512x512">macOS App (512x512)</option>
-    <option value="1200x630">WordPress (1200x630)</option>
-    <option value="1280x720">VSCode Marketplace (1280x720)</option>
-  </select>
-  <button id="captureBtn">Capturer</button>
-  <div id="status"></div>
+  <div class="header">
+    <h1>Screen Capture</h1>
+  </div>
+  
+  <div class="formats">
+    <div class="format-item active" data-format="1200x1200">
+      <div class="format-info">
+        <div class="format-name">Chrome Store</div>
+        <div class="format-size">1200 × 1200</div>
+      </div>
+      <div class="check-icon"></div>
+    </div>
+    
+    <div class="format-item" data-format="1024x1024">
+      <div class="format-info">
+        <div class="format-name">Android Store</div>
+        <div class="format-size">1024 × 1024</div>
+      </div>
+      <div class="check-icon"></div>
+    </div>
+    
+    <div class="format-item" data-format="1024x768">
+      <div class="format-info">
+        <div class="format-name">iOS App</div>
+        <div class="format-size">1024 × 768</div>
+      </div>
+      <div class="check-icon"></div>
+    </div>
+    
+    <div class="format-item" data-format="512x512">
+      <div class="format-info">
+        <div class="format-name">macOS App</div>
+        <div class="format-size">512 × 512</div>
+      </div>
+      <div class="check-icon"></div>
+    </div>
+    
+    <div class="format-item" data-format="1200x630">
+      <div class="format-info">
+        <div class="format-name">WordPress</div>
+        <div class="format-size">1200 × 630</div>
+      </div>
+      <div class="check-icon"></div>
+    </div>
+    
+    <div class="format-item" data-format="1280x720">
+      <div class="format-info">
+        <div class="format-name">VSCode</div>
+        <div class="format-size">1280 × 720</div>
+      </div>
+      <div class="check-icon"></div>
+    </div>
+  </div>
+  
+  <div class="capture-section">
+    <button id="captureBtn">
+      <div class="capture-icon"></div>
+      Capture Screenshot
+    </button>
+    <div id="status"></div>
+  </div>
+  
   <script src="popup.js"></script>
 </body>
 </html>

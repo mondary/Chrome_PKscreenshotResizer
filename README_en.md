@@ -48,6 +48,17 @@ Chrome extension using Manifest V3. No build needed - use the folder directly.
 - 1.0.0: Initial version with 1200x1200 capture functionality
 - 1.1.0: Refactoring - files organized in src/ folder
 - 1.2.0: Added multiple formats for different platforms (Chrome, Android, iOS, macOS, WordPress, VSCode)
+- 1.3.0: Fixed screenshot capture with better quality
+- 1.4.0: Improved UI and added background worker
+- 1.5.0: Complete redesign with Apple-like design
+- 1.6.0: Fixed extension name and added icons
+- 1.7.0: Fixed icon path in manifest.json
+- 1.8.0: Removed icon from manifest.json to avoid loading error
+- 1.9.0: Added absolute icon path to manifest.json
+- 2.0.0: Fixed icon path to point to src/icon.png file
+- 2.1.0: Temporarily removed icon from manifest.json to allow extension loading
+- 2.2.0: Added icon with relative path in manifest.json
+- 2.3.0: Generated standard icon sizes (16, 32, 48, 128px) and icons in extension management page
 
 ## 🔗 Links
 - FR README: [README.md](README.md)
