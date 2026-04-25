@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Screenshot Multi-format",
+  "version": "1.4",
+  "description": "Redimensionne la fenêtre et prend un screenshot dans différents formats",
+  "permissions": [
+    "tabs",
+    "windows",
+    "activeTab",
+    "downloads"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Take Screenshot Multi-format"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
