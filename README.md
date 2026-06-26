@@ -27,3 +27,4 @@ Aucune configuration nécessaire - l'extension est prête à l'emploi.
 ## 🔗 Liens
 - EN README : [README_en.md](README_en.md)
 - Chrome Web Store : [À venir]
+- Politique de confidentialite : [GitHub Pages](https://mondary.github.io/Chrome_PKscreenshotResizer/store/privacy-policy-pk-screenshot-resizer.html)

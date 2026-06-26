@@ -63,3 +63,4 @@ Chrome extension using Manifest V3. No build needed - use the folder directly.
 ## 🔗 Links
 - FR README: [README.md](README.md)
 - Chrome Web Store: [Coming soon]
+- Privacy Policy: [GitHub Pages](https://mondary.github.io/Chrome_PKscreenshotResizer/store/privacy-policy-pk-screenshot-resizer.html)
