@@ -1,126 +1,196 @@
 <!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Privacy Policy - PK Screenshot Resizer</title>
-    <meta name="description" content="Privacy policy for the PK Screenshot Resizer Chrome extension.">
-    <style>
-      :root {
-        color-scheme: light;
-        --text: #1f2933;
-        --muted: #52606d;
-        --border: #d9e2ec;
-        --surface: #fff;
-        --accent: #0f766e;
-        --background: #f7f9fb;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        background: var(--background);
-        color: var(--text);
-        font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      }
-      main {
-        width: min(900px, calc(100% - 32px));
-        margin: 40px auto;
-        padding: 40px;
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 8px;
-      }
-      h1, h2 { line-height: 1.2; }
-      h1 { margin: 0 0 8px; font-size: 2rem; }
-      h2 {
-        margin-top: 32px;
-        padding-top: 24px;
-        border-top: 1px solid var(--border);
-        font-size: 1.35rem;
-      }
-      p, li { color: var(--muted); }
-      a { color: var(--accent); }
-      .meta { margin-top: 0; }
-      .language-note {
-        padding: 14px 16px;
-        border-left: 4px solid var(--accent);
-        background: #ebfffb;
-        color: var(--text);
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>Politique de confidentialite - PK Screenshot Resizer</h1>
-      <p class="meta">Derniere mise a jour : 26 juin 2026</p>
-      <p class="language-note">This page is the official privacy policy for the PK Screenshot Resizer Chrome extension. An English version is available below the French version.</p>
+<html lang="fr" class="h-full bg-slate-50">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - PK Screenshot Resizer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="h-full text-slate-900 antialiased">
+  <div class="min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto bg-white border border-slate-200 rounded-2xl shadow-xl overflow-hidden">
+      <!-- Header Section -->
+      <div class="p-8 sm:p-12 border-b border-slate-100 bg-white">
+        <div class="flex flex-col sm:flex-row items-center gap-6">
+          <div class="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-100 shadow-inner p-2">
+            <img src="icon.png" alt="PK Screenshot Resizer Icon" class="w-full h-full object-contain rounded-lg">
+          </div>
+          <div class="text-center sm:text-left">
+            <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Politique de confidentialité</h1>
+            <p class="mt-2 text-lg text-slate-500 font-medium italic">PK Screenshot Resizer Chrome Extension</p>
+            <div class="mt-4 flex flex-wrap justify-center sm:justify-start gap-2">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-slate-100 text-slate-800 border border-slate-200">
+                    Dernière mise à jour : 26 juin 2026
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <h2>Donnees traitees</h2>
-      <p>PK Screenshot Resizer ne collecte pas de donnees personnelles pour un serveur externe. L'extension traite uniquement les donnees necessaires pour redimensionner la fenetre active, capturer un screenshot et enregistrer ce fichier localement.</p>
-      <ul>
-        <li>l'onglet actif et sa fenetre pour effectuer la capture ;</li>
-        <li>l'image capturee generee localement par Chrome ;</li>
-        <li>le nom du fichier telecharge par l'utilisateur.</li>
-      </ul>
+      <!-- French Version Section -->
+      <div class="p-8 sm:p-12 space-y-12">
+        <div class="bg-indigo-50 border-l-4 border-indigo-600 p-6 rounded-r-xl">
+          <p class="text-indigo-900 font-medium leading-relaxed">
+            Cette page est la politique de confidentialité officielle de l'extension Chrome PK Screenshot Resizer. 
+            <span class="block mt-1 opacity-75 italic text-sm">This page is the official privacy policy for the PK Screenshot Resizer Chrome extension. An English version is available below the French version.</span>
+          </p>
+        </div>
 
-      <h2>Utilisation des donnees</h2>
-      <p>Ces donnees sont utilisees uniquement pour effectuer la capture d'ecran demandee par l'utilisateur et lancer son telechargement local.</p>
+        <div class="grid grid-cols-1 gap-12">
+          <!-- Donnees collectees -->
+          <section>
+            <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-3 mb-6">
+              <span class="w-2 h-8 bg-indigo-600 rounded-full"></span>
+              Données traitées
+            </h2>
+            <div class="prose prose-slate max-w-none text-slate-600 leading-relaxed">
+              <p class="mb-4">PK Screenshot Resizer ne collecte pas de données personnelles pour un serveur externe. L'extension traite uniquement les données nécessaires pour redimensionner la fenêtre active, capturer un screenshot et enregistrer ce fichier localement :</p>
+              <ul class="space-y-3 list-none pl-0">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-indigo-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span>L'onglet actif et sa fenêtre pour effectuer la capture ;</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-indigo-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span>L'image capturée générée localement par Chrome ;</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-indigo-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span>Le nom du fichier téléchargé par l'utilisateur.</span>
+                </li>
+              </ul>
+            </div>
+          </section>
 
-      <h2>Stockage et transfert</h2>
-      <p>L'extension n'envoie pas les captures ni les informations de navigation a un serveur externe. Les fichiers sont generes localement par Chrome puis telecharges sur l'appareil de l'utilisateur via l'API de telechargement du navigateur.</p>
+          <!-- Utilisation des donnees -->
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4">Utilisation des données</h2>
+            <p class="text-slate-600 leading-relaxed">Ces données sont utilisées uniquement pour effectuer la capture d'écran demandée par l'utilisateur et lancer son téléchargement local.</p>
+          </section>
 
-      <h2>Partage des donnees</h2>
-      <p>PK Screenshot Resizer ne vend pas, ne partage pas et ne transfere pas les donnees utilisateur a des tiers. Aucun tracking, profilage, publicite ou analyse externe n'est utilise.</p>
+          <!-- Stockage des donnees -->
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 text-slate-900">Stockage et transfert</h2>
+            <p class="text-slate-600 leading-relaxed">L'extension n'envoie pas les captures ni les informations de navigation à un serveur externe. Les fichiers sont générés localement par Chrome puis téléchargés sur l'appareil de l'utilisateur via l'API de téléchargement du navigateur.</p>
+          </section>
 
-      <h2>Cookies et suivi</h2>
-      <p>L'extension n'utilise pas de cookies, de pixels de suivi, d'analytics ni de technologies publicitaires.</p>
+          <!-- Partage et transfert -->
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 text-slate-900">Partage et transfert</h2>
+            <p class="text-slate-600 leading-relaxed">PK Screenshot Resizer ne vend pas, ne loue pas, ne partage pas et ne transfère pas les données utilisateur à des tiers. Les données ne sont pas utilisées pour la publicité, le suivi analytique, le profilage, la solvabilité ou des finalités sans rapport avec la fonctionnalité de base de l'extension.</p>
+          </section>
 
-      <h2>Permissions Chrome</h2>
-      <p>Les permissions declarees servent uniquement a identifier l'onglet actif, redimensionner la fenetre courante, capturer la partie visible et sauvegarder le screenshot sur l'appareil de l'utilisateur.</p>
+          <!-- Cookies et suivi -->
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 text-slate-900">Cookies et suivi</h2>
+            <p class="text-slate-600 leading-relaxed">L'extension n'utilise pas de cookies, de pixels de suivi, d'outils analytiques ou de technologies publicitaires.</p>
+          </section>
 
-      <h2>Suppression des donnees</h2>
-      <p>Les captures sont enregistrees uniquement si l'utilisateur confirme le telechargement. Les fichiers peuvent etre supprimes a tout moment depuis l'ordinateur de l'utilisateur. L'extension ne conserve pas d'historique externe des captures.</p>
+          <!-- Acces et suppression -->
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 text-slate-900">Accès et suppression</h2>
+            <p class="text-slate-600 leading-relaxed">Les captures sont enregistrées uniquement si l'utilisateur confirme le téléchargement. Les fichiers peuvent être supprimés à tout moment depuis l'ordinateur de l'utilisateur. L'extension ne conserve pas d'historique externe des captures.</p>
+          </section>
 
-      <h2>Modifications de cette politique</h2>
-      <p>Cette politique peut etre mise a jour si les fonctionnalites de l'extension changent. La date de mise a jour sera modifiee sur cette page.</p>
+          <!-- Permissions Chrome -->
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 text-slate-900">Permissions Chrome</h2>
+            <p class="text-slate-600 leading-relaxed">Les permissions déclarées servent uniquement à identifier l'onglet actif, redimensionner la fenêtre courante, capturer la partie visible et sauvegarder le screenshot sur l'appareil de l'utilisateur.</p>
+          </section>
 
-      <h2>Contact</h2>
-      <p>Pour toute question concernant cette politique de confidentialite, contactez : <a href="mailto:contact@mondary.design">contact@mondary.design</a>.</p>
+          <!-- Modifications de cette politique -->
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 text-slate-900">Modifications de cette politique</h2>
+            <p class="text-slate-600 leading-relaxed">Cette politique peut être mise à jour si les fonctionnalités de l'extension changent. La date de mise à jour sera modifiée sur cette page.</p>
+          </section>
 
-      <h2>Privacy Policy - English Version</h2>
-      <p class="meta">Last updated: June 26, 2026</p>
+          <!-- Contact -->
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 text-slate-900">Contact</h2>
+            <p class="text-slate-600 leading-relaxed italic">Pour toute question concernant cette politique de confidentialité, contactez : <a href="mailto:contact@mondary.design" class="text-indigo-600 underline font-semibold decoration-2 underline-offset-4">contact@mondary.design</a>.</p>
+          </section>
+        </div>
 
-      <h2>Data Processed</h2>
-      <p>PK Screenshot Resizer does not collect personal data for an external server. The extension only processes the data required to resize the active window, capture a screenshot, and save that file locally.</p>
-      <ul>
-        <li>the active tab and its window in order to perform the capture;</li>
-        <li>the screenshot image generated locally by Chrome;</li>
-        <li>the filename downloaded by the user.</li>
-      </ul>
+        <div class="border-t border-slate-100 my-16 pt-16">
+          <h2 class="text-3xl font-black text-slate-200 uppercase tracking-widest mb-12 text-center">English Version</h2>
+          
+          <div class="space-y-12">
+            <section>
+              <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-3 mb-6">
+                <span class="w-2 h-8 bg-indigo-600 rounded-full"></span>
+                Data Processed
+              </h2>
+              <div class="prose prose-slate max-w-none text-slate-600 leading-relaxed">
+                <p class="mb-4">PK Screenshot Resizer does not collect personal data for an external server. The extension only processes the information required to resize the active window, capture a screenshot, and save that file locally:</p>
+                <ul class="space-y-3 list-none pl-0">
+                  <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-indigo-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span>The active tab and its window in order to perform the capture;</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-indigo-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span>The screenshot image generated locally by Chrome;</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-indigo-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span>The filename downloaded by the user.</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
 
-      <h2>Use of Data</h2>
-      <p>This data is used only to perform the screenshot requested by the user and start its local download.</p>
+            <section>
+              <h2 class="text-xl font-bold text-slate-900 mb-4">Use of Data</h2>
+              <p class="text-slate-600 leading-relaxed">This data is used only to perform the screenshot requested by the user and start its local download.</p>
+            </section>
 
-      <h2>Storage and Transfer</h2>
-      <p>The extension does not send screenshots or browsing information to an external server. Files are generated locally by Chrome and then downloaded to the user's device through the browser download API.</p>
+            <section>
+              <h2 class="text-xl font-bold text-slate-900 mb-4">Storage and Transfer</h2>
+              <p class="text-slate-600 leading-relaxed">The extension does not send screenshots or browsing information to an external server. Files are generated locally by Chrome and then downloaded to the user's device through the browser download API.</p>
+            </section>
 
-      <h2>Data Sharing</h2>
-      <p>PK Screenshot Resizer does not sell, share, or transfer user data to third parties. No tracking, profiling, advertising, or external analytics is used.</p>
+            <section>
+              <h2 class="text-xl font-bold text-slate-900 mb-4">Sharing and Transfer</h2>
+              <p class="text-slate-600 leading-relaxed">PK Screenshot Resizer does not sell, rent, share, or transfer user data to third parties. Data is not used for advertising, analytics tracking, profiling, creditworthiness, or purposes unrelated to the extension's core functionality.</p>
+            </section>
 
-      <h2>Cookies and Tracking</h2>
-      <p>The extension does not use cookies, tracking pixels, analytics tools, or advertising technologies.</p>
+            <section>
+              <h2 class="text-xl font-bold text-slate-900 mb-4">Cookies and Tracking</h2>
+              <p class="text-slate-600 leading-relaxed">The extension does not use cookies, tracking pixels, analytics tools, or advertising technologies.</p>
+            </section>
 
-      <h2>Chrome Permissions</h2>
-      <p>The declared permissions are used only to identify the active tab, resize the current window, capture the visible area, and save the screenshot on the user's device.</p>
+            <section>
+              <h2 class="text-xl font-bold text-slate-900 mb-4">Access and Deletion</h2>
+              <p class="text-slate-600 leading-relaxed">Screenshots are saved only if the user confirms the download. Files can be deleted at any time from the user's computer. The extension does not keep an external history of captures.</p>
+            </section>
 
-      <h2>Data Deletion</h2>
-      <p>Screenshots are saved only if the user confirms the download. Files can be deleted at any time from the user's computer. The extension does not keep an external history of captures.</p>
+            <section>
+              <h2 class="text-xl font-bold text-slate-900 mb-4">Chrome Permissions</h2>
+              <p class="text-slate-600 leading-relaxed">The declared permissions are used only to identify the active tab, resize the current window, capture the visible area, and save the screenshot on the user's device.</p>
+            </section>
 
-      <h2>Changes to This Policy</h2>
-      <p>This policy may be updated if the extension features change. The update date will be changed on this page.</p>
+            <section>
+              <h2 class="text-xl font-bold text-slate-900 mb-4">Changes to This Policy</h2>
+              <p class="text-slate-600 leading-relaxed">This policy may be updated if the extension features change. The update date will be changed on this page.</p>
+            </section>
 
-      <h2>Contact</h2>
-      <p>For questions about this privacy policy, contact: <a href="mailto:contact@mondary.design">contact@mondary.design</a>.</p>
-    </main>
-  </body>
+            <section>
+              <h2 class="text-xl font-bold text-slate-900 mb-4">Contact</h2>
+              <p class="text-slate-600 leading-relaxed italic">For questions about this privacy policy, contact: <a href="mailto:contact@mondary.design" class="text-indigo-600 underline font-semibold decoration-2 underline-offset-4">contact@mondary.design</a>.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer -->
+      <div class="p-8 bg-slate-50 border-t border-slate-100 text-center">
+        <p class="text-slate-400 text-sm">© 2026 PK Screenshot Resizer. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
