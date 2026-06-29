@@ -59,6 +59,7 @@ Chrome extension using Manifest V3. No build needed - use the folder directly.
 - 2.1.0: Temporarily removed icon from manifest.json to allow extension loading
 - 2.2.0: Added icon with relative path in manifest.json
 - 2.3.0: Generated standard icon sizes (16, 32, 48, 128px) and icons in extension management page
+- 2.4.0: Removed unnecessary `tabs` and `host_permissions` declarations to match Chrome Web Store permission review requirements
 
 ## 🔗 Links
 - FR README: [README.md](README.md)

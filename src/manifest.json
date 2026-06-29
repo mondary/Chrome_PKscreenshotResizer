@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "PKscreenshotResizer",
-  "version": "2.3",
+  "version": "2.4",
   "description": "Redimensionne la fenêtre et prend un screenshot dans différents formats",
   "permissions": [
     "windows",

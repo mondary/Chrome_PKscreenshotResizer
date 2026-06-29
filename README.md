@@ -22,6 +22,7 @@
 Aucune configuration nécessaire - l'extension est prête à l'emploi.
 
 ## 🧾 Changelog
+- 2.4.0 : Suppression des permissions inutiles `tabs` et `host_permissions`, conformément au retour de revue Chrome Web Store.
 - 2.3.0 : Redesign complet de l'interface (UI Apple-like, icônes, bouton moderne). Mise en conformité des assets store et documentation technique (redimensionnement automatique via `sips`).
 
 ## 🔗 Liens
