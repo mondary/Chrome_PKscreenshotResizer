@@ -21,11 +21,14 @@ PK Screenshot Resizer resizes the current browser window, captures the visible t
 
 ## Permissions summary
 
-- `tabs`: used to identify and activate the current tab.
-- `windows`: used to resize the current browser window.
-- `activeTab`: used when the user explicitly triggers a capture from the extension UI.
+- `windows`: used to resize the current browser window before capture.
+- `activeTab`: used when the user explicitly triggers a capture from the extension UI, including access to the active tab for capture.
 - `downloads`: used to save the generated screenshot file locally.
-- `host_permissions: <all_urls>`: currently declared in the manifest.
+
+Removed from the manifest:
+
+- `tabs`: not required for the implemented `chrome.tabs` methods used here.
+- `host_permissions: <all_urls>`: not required for the implemented capture flow.
 
 ## Data handling summary
 
